@@ -1,0 +1,100 @@
+Start ssh2...
+DEBUG: Local ident: 'SSH-2.0-ssh2js0.0.15'
+DEBUG: Client: Trying 120.24.208.71 on port 22 ...
+DEBUG: Client: Connected
+DEBUG: Parser: IN_INIT
+DEBUG: Parser: IN_GREETING
+DEBUG: Parser: IN_HEADER
+DEBUG: Remote ident: 'SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1.4'
+DEBUG: Outgoing: Writing KEXINIT
+DEBUG: Parser: IN_PACKETBEFORE (expecting 8)
+DEBUG: Parser: IN_PACKET
+DEBUG: Parser: pktLen:980,padLen:9,remainLen:976
+DEBUG: Parser: IN_PACKETDATA
+DEBUG: Parser: IN_PACKETDATAAFTER, packet: KEXINIT
+DEBUG: Comparing KEXINITs ...
+DEBUG: (local) KEX algorithms: diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+DEBUG: (remote) KEX algorithms: ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+DEBUG: KEX algorithm: diffie-hellman-group-exchange-sha256
+DEBUG: (local) Host key formats: ssh-rsa,ssh-dss
+DEBUG: (remote) Host key formats: ssh-rsa,ssh-dss,ecdsa-sha2-nistp256
+DEBUG: Host key format: ssh-rsa
+DEBUG: (local) Client->Server ciphers: aes256-ctr,aes192-ctr,aes128-ctr,aes128-gcm,aes128-gcm@openssh.com,aes256-gcm,aes256-gcm@openssh.com,aes256-cbc,aes192-cbc,aes128-cbc,blowfish-cbc,3des-cbc,arcfour256,arcfour128,cast128-cbc,arcfour
+DEBUG: (remote) Client->Server ciphers: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+DEBUG: Client->Server Cipher: aes256-ctr
+DEBUG: (local) Server->Client ciphers: aes256-ctr,aes192-ctr,aes128-ctr,aes128-gcm,aes128-gcm@openssh.com,aes256-gcm,aes256-gcm@openssh.com,aes256-cbc,aes192-cbc,aes128-cbc,blowfish-cbc,3des-cbc,arcfour256,arcfour128,cast128-cbc,arcfour
+DEBUG: (remote) Server->Client ciphers: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+DEBUG: Server->Client Cipher: aes256-ctr
+DEBUG: (local) Client->Server HMAC algorithms: hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha2-256-96,hmac-sha2-512,hmac-sha2-512-96,hmac-ripemd160,hmac-sha1-96,hmac-md5-96
+DEBUG: (remote) Client->Server HMAC algorithms: hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-sha2-256,hmac-sha2-256-96,hmac-sha2-512,hmac-sha2-512-96,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+DEBUG: Client->Server HMAC algorithm: hmac-md5
+DEBUG: (local) Server->Client HMAC algorithms: hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha2-256-96,hmac-sha2-512,hmac-sha2-512-96,hmac-ripemd160,hmac-sha1-96,hmac-md5-96
+DEBUG: (remote) Server->Client HMAC algorithms: hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-sha2-256,hmac-sha2-256-96,hmac-sha2-512,hmac-sha2-512-96,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+DEBUG: Server->Client HMAC algorithm: hmac-md5
+DEBUG: (local) Client->Server compression algorithms: none
+DEBUG: (remote) Client->Server compression algorithms: none,zlib@openssh.com
+DEBUG: Client->Server compression algorithm: none
+DEBUG: (local) Server->Client compression algorithms: none
+DEBUG: (remote) Server->Client compression algorithms: none,zlib@openssh.com
+DEBUG: Server->Client compression algorithm: none
+DEBUG: Outgoing: Writing KEXDH_GEX_REQUEST
+DEBUG: Parser: IN_PACKETBEFORE (expecting 8)
+DEBUG: Parser: IN_PACKET
+DEBUG: Parser: pktLen:404,padLen:8,remainLen:400
+DEBUG: Parser: IN_PACKETDATA
+DEBUG: Parser: IN_PACKETDATAAFTER, packet: KEXDH_GEX_GROUP
+DEBUG: Outgoing: Writing KEXDH_GEX_INIT
+DEBUG: Parser: IN_PACKETBEFORE (expecting 8)
+DEBUG: Parser: IN_PACKET
+DEBUG: Parser: pktLen:956,padLen:8,remainLen:952
+DEBUG: Parser: IN_PACKETDATA
+DEBUG: Parser: IN_PACKETDATAAFTER, packet: KEXDH_GEX_REPLY
+DEBUG: Checking host key format
+DEBUG: Checking signature format
+DEBUG: Verifying host fingerprint
+DEBUG: Host accepted by default (no verification)
+DEBUG: Verifying signature
+DEBUG: Outgoing: Writing NEWKEYS
+DEBUG: Parser: IN_PACKETBEFORE (expecting 8)
+DEBUG: Parser: IN_PACKET
+DEBUG: Parser: pktLen:12,padLen:10,remainLen:8
+DEBUG: Parser: IN_PACKETDATA
+DEBUG: Parser: IN_PACKETDATAAFTER, packet: NEWKEYS
+DEBUG: Outgoing: Writing SERVICE_REQUEST (ssh-userauth)
+DEBUG: Parser: IN_PACKETBEFORE (expecting 16)
+DEBUG: Parser: IN_PACKET
+DEBUG: Parser: Decrypting
+DEBUG: Parser: pktLen:28,padLen:10,remainLen:16
+DEBUG: Parser: IN_PACKETDATA
+DEBUG: Parser: Decrypting
+DEBUG: Parser: HMAC size:16
+DEBUG: Parser: IN_PACKETDATAVERIFY
+DEBUG: Parser: Verifying MAC
+DEBUG: Parser: IN_PACKETDATAVERIFY (Valid HMAC)
+DEBUG: Parser: IN_PACKETDATAAFTER, packet: SERVICE_ACCEPT
+DEBUG: Outgoing: Writing USERAUTH_REQUEST (keyboard-interactive)
+DEBUG: Parser: IN_PACKETBEFORE (expecting 16)
+DEBUG: Parser: IN_PACKET
+DEBUG: Parser: Decrypting
+DEBUG: Parser: pktLen:44,padLen:19,remainLen:32
+DEBUG: Parser: IN_PACKETDATA
+DEBUG: Parser: Decrypting
+DEBUG: Parser: HMAC size:16
+DEBUG: Parser: IN_PACKETDATAVERIFY
+DEBUG: Parser: Verifying MAC
+DEBUG: Parser: IN_PACKETDATAVERIFY (Valid HMAC)
+DEBUG: Parser: IN_PACKETDATAAFTER, packet: USERAUTH_FAILURE
+DEBUG: Client: keyboard-interactive auth failed
+DEBUG: Outgoing: Writing USERAUTH_REQUEST (none)
+DEBUG: Parser: IN_PACKETBEFORE (expecting 16)
+DEBUG: Parser: IN_PACKET
+DEBUG: Parser: Decrypting
+DEBUG: Parser: pktLen:44,padLen:19,remainLen:32
+DEBUG: Parser: IN_PACKETDATA
+DEBUG: Parser: Decrypting
+DEBUG: Parser: HMAC size:16
+DEBUG: Parser: IN_PACKETDATAVERIFY
+DEBUG: Parser: Verifying MAC
+DEBUG: Parser: IN_PACKETDATAVERIFY (Valid HMAC)
+DEBUG: Parser: IN_PACKETDATAAFTER, packet: USERAUTH_FAILURE
+DEBUG: Client: none auth failed
