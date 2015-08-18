@@ -1,3 +1,3 @@
 var webserver = require('./app/webserver.js');
-
-webserver.start();
+var io = require('./app/io.js');
+io.init(webserver.start());

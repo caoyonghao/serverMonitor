@@ -81,8 +81,15 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="3rd/jquery/jquery.min.js"></script>
+<script src="3rd/socket.io/socket.io.js"></script>
 <script src="3rd/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-
+<script>
+    var socket = io('http://localhost:3000');
+    socket.on('news', function (data) {
+        console.log(data);
+    });
+    socket.emit('message', { my: 'over here' });
+</script>
 
 </body></html>
